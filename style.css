@@ -37,7 +37,7 @@ p{
 
 #contentGrid{
   background-color: rgba(186, 146, 100,0.8);
-  height: 50vmin;
+  height: 55vmin;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -74,14 +74,26 @@ div.scrollmenu {
   font-size: 3vmin;
 }
 
-.footerImageContainer{
+.ImageContainer{
   border-radius: 0.2vmin;
   width: 25vmin;
   height: 25vmin;
   overflow: hidden;
 }
 
-.footerImageContainer img {
+.ImageContainer img {
   width: 100%;
   border-radius: 0.25vmin;
+}
+
+.buttons{
+  border-radius: 40vmin;
+  color: black;
+  text-align: center;
+  font-size: 2vmin;
+  cursor: pointer;
+  width: 4vmin;
+  height: 4vmin;
+  position: relative;
+  right: 0;
 }

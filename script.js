@@ -62,7 +62,7 @@ function applyJSON(incomingJSON){
 
   /// Create & add footer image
   let newImageContainer = document.createElement("DIV");
-  newImageContainer.classList.add("footerImageContainer");
+  newImageContainer.classList.add("ImageContainer");
   let newImage = document.createElement("IMG");
   newImage.src = incomingJSON['picture_url'];
   newImageContainer.appendChild(newImage);
@@ -84,6 +84,12 @@ function applyJSON(incomingJSON){
   let newContentCalories = document.createElement("p");
   newContentCalories.innerHTML = incomingJSON['calories'];
   newContentElement.appendChild(newContentCalories);
+
+  let newContentButton = document.createElement("button");
+  newContentButton.innerHTML = "+";
+  newContentButton.classList.add('buttons');
+  newContentElement.appendChild(newContentButton);
+
 
   contentMenu.appendChild(newContentElement);
 }
